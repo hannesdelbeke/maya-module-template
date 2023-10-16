@@ -38,6 +38,7 @@ They also let you run code on startup, without editing the `userSetup.py` file, 
 ![](https://www.sidefx.com/media/uploads/products/engine/hengine_maya_load.jpg)  
 This project includes a `helloWorld.py` plugin (a demo plugin from the Maya docs).  
 Plugins should be placed in the `MyModule/plug-ins` folder
+- note that `initializePlugin` & `uninitializePlugin` methods don't follow the PEP8 name convention. Do not change this.
 
 ### scripts
 Your Python modules should go under `myModule/scripts`.  
