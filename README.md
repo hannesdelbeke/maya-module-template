@@ -3,6 +3,7 @@
 - rename the `MyModule` folder & `MyModule/myModule.mod` 
 - open the `.mod` file and change the module name inside
 - replace this README.md with your own instructions
+- Optional: Add a new compatible LICENSE
 
 ### Module
 - the MyModule directory contains the module files.
