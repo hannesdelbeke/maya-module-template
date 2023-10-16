@@ -1,5 +1,7 @@
 # maya-plugin-template
 
+- rename the `MyModule` folder & `MyModule/myModule.mod` 
+- open the `.mod` file and change the module name inside 
 
 ### Module
 - the MyModule directory contains the module files.
