@@ -12,7 +12,8 @@ A template to quickly make a Python plugin & module for Maya
 ### Module
 
 A module let's you change the Maya environment, without changing your Maya installation.  
-e.g. add resources, plugins, environment paths, ...
+e.g. add resources, plugins, environment paths, ...  
+We use this to register our plugin with Maya in a modular way: When the user registers the module, everything else is automatically hooked up.  
 
 - the MyModule directory contains the module files.
 - the icons, plug-ins, presets, and scripts subdirectories are the default directories that Maya expects to find in a module. You can choose to use different directories or multiple directories in your module, but you will need to specify these in the (.mod) module description file.
@@ -23,8 +24,9 @@ e.g. add resources, plugins, environment paths, ...
 - Create a module description file file with the `.mod` extension (see [docs](https://help.autodesk.com/view/MAYAUL/2023/ENU/?guid=Maya_SDK_Distributing_Maya_Plug_ins_DistributingUsingModules_ModuleDescriptionFiles_html))
 
 ### plugin
-Plugins let the user easily enable / disable a tool in Maya.  
+Plugins let the user easily enable / disable a tool in Maya (with Maya's plugin manager)  
 They also let you run code on startup, without editing the `userSetup.py` file, keeping your Maya clean / vanilla.  
+
 ![](https://www.sidefx.com/media/uploads/products/engine/hengine_maya_load.jpg)  
 This project includes a sample `helloWorld.py` plugin - A plugin sample from the Maya docs. 
 plugins should be placed in the `MyModule/plug-ins` folder
