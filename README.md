@@ -8,11 +8,12 @@ A template to quickly make a Python plugin & module for Maya
   - rename the `MyModule` folder & `MyModule/myModule.mod` 
   - open the `.mod` file and change the module name inside
 - Plugin setup
-  - rename the demo plugin
-  - edit the plugin
+  - rename the demo plugin `MyModule/plug-ins/hello_world.py` 
+  - add load & unload code to the `initializePlugin` & `uninitializePlugin` methods
+  - optionally handle command registration on load & unload 
 - add your Python modules to `MyModule/scripts`
 - Optional
-  - replace this README.md with your own instructions
+  - replace this `README.md` with your own instructions
   - Add a LICENSE
   - delete all `.gitkeep` files
 
