@@ -31,6 +31,10 @@ They also let you run code on startup, without editing the `userSetup.py` file, 
 This project includes a sample `helloWorld.py` plugin - A plugin sample from the Maya docs. 
 plugins should be placed in the `MyModule/plug-ins` folder
 
+### scripts
+Your Python modules should go under `myModule/scripts`.  
+It might be a good practice to develop them in a separate repo, so the module can have it's own `pyproject.toml` & `requirements.txt`
+
 ### icons
 TODO how to access icons in script
 
