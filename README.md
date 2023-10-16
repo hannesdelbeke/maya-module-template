@@ -1,5 +1,5 @@
 # maya-plugin-template
-- click `use this template` to create your GitHub repo, & clone it
+- click 🟩`use this template` to create your GitHub repo, & clone it
 - rename the `MyModule` folder & `MyModule/myModule.mod` 
 - open the `.mod` file and change the module name inside
 - replace this README.md with your own instructions
