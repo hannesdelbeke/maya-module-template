@@ -21,6 +21,11 @@ They also let you run code on startup, without editing the `userSetup.py` file, 
 This project includes a sample `helloWorld.py` plugin - A plugin sample from the Maya docs. 
 plugins should be placed in the `MyModule/plug-ins` folder
 
+### presets
+attribute presets
+- [ ] TODO createa a sample  
+[docs](https://help.autodesk.com/view/MAYAUL/2023/ENU/?guid=GUID-B90EF3C9-EFB8-4BBC-B9A5-69F7EC86B3C3)
+
 ### installation
 TODO
 ### menu entry
