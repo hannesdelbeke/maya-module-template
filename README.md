@@ -10,6 +10,10 @@ A template to quickly make a Python plugin & module for Maya
 - Add a LICENSE
 
 ### Module
+
+A module let's you change the Maya environment, without changing your Maya installation.  
+e.g. add resources, plugins, environment paths, ...
+
 - the MyModule directory contains the module files.
 - the icons, plug-ins, presets, and scripts subdirectories are the default directories that Maya expects to find in a module. You can choose to use different directories or multiple directories in your module, but you will need to specify these in the (.mod) module description file.
   - Add any icons used in your add-on to the icons directory
