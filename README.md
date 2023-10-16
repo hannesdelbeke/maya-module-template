@@ -12,7 +12,7 @@
 
 ### plugin
 Plugins let the user easily enable / disable a tool in Maya.  
-They also let you run code on startup, without editing the userSetup.py file, keeping your Maya clean / vanilla.  
+They also let you run code on startup, without editing the `userSetup.py` file, keeping your Maya clean / vanilla.  
 ![](https://www.sidefx.com/media/uploads/products/engine/hengine_maya_load.jpg)  
 This project includes a sample `helloWorld.py` plugin - A plugin sample from the Maya docs. 
 plugins should be placed in the `MyModule/plug-ins` folder
