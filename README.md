@@ -4,10 +4,17 @@ A template to quickly make a Python plugin & module for Maya
 
 ### Instructions
 - click 🟩`use this template` to create your GitHub repo, & clone it
-- rename the `MyModule` folder & `MyModule/myModule.mod` 
-- open the `.mod` file and change the module name inside
-- replace this README.md with your own instructions
-- Add a LICENSE
+- Module setup 
+  - rename the `MyModule` folder & `MyModule/myModule.mod` 
+  - open the `.mod` file and change the module name inside
+- Plugin setup
+  - rename the demo plugin
+  - edit the plugin
+- add your Python modules to `MyModule/scripts`
+- Optional
+  - replace this README.md with your own instructions
+  - Add a LICENSE
+  - delete all `.gitkeep` files
 
 ### Module
 
