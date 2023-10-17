@@ -16,6 +16,7 @@ A template to quickly make a Python plugin & module for Maya
   - replace this `README.md` with your own instructions
   - Add a LICENSE
   - delete all `.gitkeep` files
+  - add a button or menu entry that opens the documentation url
 
 ### Module
 
