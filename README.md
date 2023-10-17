@@ -64,7 +64,7 @@ TODO
 ### shelf entry
 TODO
 
-### command demo
+### Command
 
 Adding a command to your plugin is optional. (I never had the need for it)
 In Maya Python scripting, MPxCommand is a base class for creating custom commands. Below is a simple example of creating a custom command using MPxCommand. This example demonstrates a command that creates a cube.
