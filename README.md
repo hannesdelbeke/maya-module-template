@@ -150,6 +150,3 @@ def uninitializePlugin(plugin):
   - maya searches for modules in the `MAYA_MODULE_PATH` env var
   - you can also add paths to `Maya.env` file
 - [maya plugin docs](https://help.autodesk.com/view/MAYAUL/2024/ENU/?guid=Maya_SDK_A_First_Plugin_Python_html)
-
-
-plugin from 
