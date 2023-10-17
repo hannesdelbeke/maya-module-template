@@ -15,7 +15,7 @@ def maya_useNewAPI():  # noqa
 
 # =============================== Command ===========================================
 class HelloWorldCommand(om.MPxCommand):
-    command_name = "py2HelloWorld"
+    command_name = "HelloWorld"
 
     def __init__(self):
         om.MPxCommand.__init__(self)
