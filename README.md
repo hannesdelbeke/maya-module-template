@@ -58,6 +58,17 @@ attribute presets
 ### installation
 TODO
 ### menu entry
+- [ ] Create the menu on the plugin initialize
+- [ ] **TODO replace with cmds code, pymel is not included by default anymore**
+```python
+import pymel.core as pm
+main_maya_window = pm.language.melGlobals['gMainWindow'] 
+custom_menu = pm.menu('Custom Menu', parent=main_maya_window)
+pm.menuItem(label="hello", command="print('hello')", parent=custom_menu)
+```
+- [ ] unload the menu on uninitialize
+- You can also use [unimenu](https://github.com/hannesdelbeke/unimenu) to add your tool to the Maya menu. Recommended for studio setups  
+
 TODO
 ### tool entry
 TODO
