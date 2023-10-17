@@ -31,7 +31,7 @@ We use this to register our plugin with Maya in a modular way: When the user reg
   - Add any MEL or Python scripts to the scripts directory
 - Create a module description file file with the `.mod` extension (see [docs](https://help.autodesk.com/view/MAYAUL/2023/ENU/?guid=Maya_SDK_Distributing_Maya_Plug_ins_DistributingUsingModules_ModuleDescriptionFiles_html))
 
-### plugin
+### Plugin
 Plugins let the user easily enable / disable a tool in Maya (with Maya's plugin manager)  
 They also let you run code on startup, without editing the `userSetup.py` file, keeping your Maya clean / vanilla.  
 
@@ -40,12 +40,15 @@ This project includes a `hello_world.py` plugin (a demo plugin from the Maya doc
 Plugins should be placed in the `MyModule/plug-ins` folder
 - note that `initializePlugin` & `uninitializePlugin` methods don't follow the PEP8 name convention. Do not change this.
 
-### scripts
-Your Python modules should go under `myModule/scripts`.  
+### Scripts
+Python modules become importable when placed in `myModule/scripts`.  
 It might be a good practice to develop them in a separate repo, so the module can have it's own `pyproject.toml` & `requirements.txt`
 
-### icons
-TODO how to access icons in script
+### Icons
+Icons in the icon folder can be accessed in Qt by name:
+```python
+icon = QtGui.QIcon(QtGui.QPixmap(':/trash.png'))
+```
 
 ### presets
 attribute presets
