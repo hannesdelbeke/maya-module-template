@@ -1,4 +1,4 @@
-# Maya Python plugin template
+# Maya Python module & plugin template
 
 A template to quickly make a Python plugin & module for Maya
 
