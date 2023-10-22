@@ -48,6 +48,17 @@ It might be a good practice to develop them in a separate repo, so the module ca
 ### Icons
 Icons in the icon folder can be accessed in Qt by name:
 ```python
+# search custom icons in the maya icon path. only default maya icons are exposed to qt.
+def get_icon_path(name: str = None) -> Optional[str]:
+    default_name = "cube.png"
+    name = name or default_name
+    for icon_dir in os.environ.get('XBMLANGPATH', '').split(os.pathsep):
+        icon_path = os.path.join(icon_dir, name)
+        if os.path.exists(icon_path):
+            return icon_path
+    if name != default_name:
+        return get_icon_path(default_name)
+
 icon = QtGui.QIcon(QtGui.QPixmap(':/trash.png'))
 ```
 
