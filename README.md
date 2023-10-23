@@ -1,6 +1,7 @@
 # Maya Python module & plugin template
 
-A template to quickly make a Python plugin & module for Maya
+A template to quickly make a Python plugin & module for Maya (For plugins only, see [Maya plugin template](https://github.com/hannesdelbeke/maya-plugin-template))
+
 
 ### Instructions
 - click 🟩`use this template` to create your GitHub repo, & clone it
