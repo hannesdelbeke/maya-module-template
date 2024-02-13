@@ -14,36 +14,36 @@ def maya_useNewAPI():  # noqa
 
 
 # =============================== Command ===========================================
-class HelloWorldCommand(om.MPxCommand):
-    command_name = "HelloWorld"
+# class HelloWorldCommand(om.MPxCommand):
+#     command_name = "HelloWorld"
 
-    # def __init__(self):
-    #     om.MPxCommand.__init__(self)
+#     # def __init__(self):
+#     #     om.MPxCommand.__init__(self)
 
-    # @staticmethod
-    # def command_creator():
-    #     return HelloWorldCommand()
+#     # @staticmethod
+#     # def command_creator():
+#     #     return HelloWorldCommand()
 
-    def doIt(self, args):
-        print ("Hello World!")
+#     def doIt(self, args):
+#         print ("Hello World!")
 
 
-def register_command(plugin):
-    pluginFn = om.MFnPlugin(plugin)
-    try:
-        pluginFn.registerCommand(HelloWorldCommand.command_name, HelloWorldCommand.__init__)
-    except Exception as e:
-        sys.stderr.write(f"Failed to register command: {HelloWorldCommand.command_name}\n")
-        raise e
+# def register_command(plugin):
+#     pluginFn = om.MFnPlugin(plugin)
+#     try:
+#         pluginFn.registerCommand(HelloWorldCommand.command_name, HelloWorldCommand.__init__)
+#     except Exception as e:
+#         sys.stderr.write(f"Failed to register command: {HelloWorldCommand.command_name}\n")
+#         raise e
   
 
-def unregister_command(plugin):
-    pluginFn = om.MFnPlugin(plugin)
-    try:
-        pluginFn.deregisterCommand(HelloWorldCommand.command_name)
-    except Exception as e:
-        sys.stderr.write(f"Failed to unregister command: {HelloWorldCommand.command_name}\n")
-        raise e
+# def unregister_command(plugin):
+#     pluginFn = om.MFnPlugin(plugin)
+#     try:
+#         pluginFn.deregisterCommand(HelloWorldCommand.command_name)
+#     except Exception as e:
+#         sys.stderr.write(f"Failed to unregister command: {HelloWorldCommand.command_name}\n")
+#         raise e
 
 
 # =============================== Menu ===========================================
@@ -55,7 +55,7 @@ def show():
 def loadMenu():
     if not cmds.menu(MENU_NAME, exists=True):
         cmds.menu(MENU_NAME, label=MENU_LABEL, parent=MENU_PARENT)
-    cmds.menuItem(label=MENU_ENTRY_LABEL, command=show)', parent=MENU_NAME)  
+    cmds.menuItem(label=MENU_ENTRY_LABEL, command=show) #, parent=MENU_NAME)  
 
 
 def unloadMenuItem():
@@ -71,11 +71,11 @@ def unloadMenuItem():
 
 # =============================== Plugin (un)load ===========================================
 def initializePlugin(plugin):
-    register_command(plugin)
+    # register_command(plugin)
     loadMenu()
 
 
 def uninitializePlugin(plugin):
-    unregister_command(plugin)
-    unloadMenuItem()
+    # unregister_command(plugin)
+    unloadMenuItem()  # TODO fix bug, doesn't work
     
