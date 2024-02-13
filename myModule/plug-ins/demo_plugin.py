@@ -52,13 +52,13 @@ def show():
     print("hello")
 
 
-def loadMenu():
+def load_menu():
     if not cmds.menu(MENU_NAME, exists=True):
         cmds.menu(MENU_NAME, label=MENU_LABEL, parent=MENU_PARENT)
     cmds.menuItem(label=MENU_ENTRY_LABEL, command=show) #, parent=MENU_NAME)  
 
 
-def unloadMenuItem():
+def unload_menu_item():
     if cmds.menu(MENU_NAME, exists=True):
         menu_item_long_name = MENU_NAME + "|" + MENU_ENTRY_LABEL
         # Check if the menu item exists; if it does, delete it
@@ -70,12 +70,12 @@ def unloadMenuItem():
 
 
 # =============================== Plugin (un)load ===========================================
-def initializePlugin(plugin):
+def initializePlugin(plugin):  #noqa, camelCase required by Maya
     # register_command(plugin)
-    loadMenu()
+    load_menu()
 
 
-def uninitializePlugin(plugin):
+def uninitializePlugin(plugin):  #noqa, camelCase required by Maya
     # unregister_command(plugin)
-    unloadMenuItem()  # TODO fix bug, doesn't work
+    unload_menu_item()  # TODO fix bug, doesn't work
     
