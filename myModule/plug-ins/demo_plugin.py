@@ -47,7 +47,7 @@ def maya_useNewAPI():  # noqa
 
 
 # =============================== Menu ===========================================
-def show():
+def show(*args):
     # TODO import our custom module
     print("hello")
 
